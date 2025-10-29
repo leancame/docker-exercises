@@ -1,0 +1,14 @@
+ # Usar la imagen base de Ubuntu
+ FROM ubuntu:latest
+
+ # Establecer el directorio de trabajo
+ WORKDIR /app
+
+ # Copiar el script de shell al contenedor
+ COPY mensaje.sh .
+
+ # Establecer permisos: lectura, escritura y ejecución para root; solo lectura para otros
+ RUN chmod 744 mensaje.sh
+
+ # Ejecutar el script al iniciar el contenedor
+ CMD ["./mensaje.sh"]

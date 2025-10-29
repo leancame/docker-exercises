@@ -1,0 +1,5 @@
+# Usar una imagen base de Ubuntu
+FROM ubuntu:latest
+
+# Comando por defecto que pausa la ejecución por 10 segundos
+CMD ["sleep", "10"]

@@ -1,0 +1,8 @@
+# Usar una imagen base de Ubuntu
+FROM ubuntu:latest
+
+# Ejecutar una instrucción que pause la ejecución por 10 segundos
+RUN sleep 10
+
+# Comando por defecto
+CMD ["echo", "La ejecución se ha pausado por 10 segundos"]
